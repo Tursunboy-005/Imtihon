@@ -55,7 +55,7 @@ namespace Imtihon
 
             Console.WriteLine($"Diagonal summa : {diagonalsum}");
             Console.WriteLine($"Last summa : {firstsum}");
-            Console.Write($"Result : {result} ");
+            Console.WriteLine($"Result : {result} ");
 
         
             Random random2 = new Random();
