@@ -11,14 +11,17 @@ namespace Imtihon
         static void Main(string[] args)
         {
             Console.WriteLine("Matn kiriting ");
-
             string str = Console.ReadLine();
-            str = str.Substring(0, str.Length - 2)  + str.Substring(in, 1).ToUpper();
-            Console.WriteLine(str);
             string[] strings = str.Split(' ');
 
-            Console.ReadLine();
+           
+            for (int i = 0; i < strings.Length; i++)
+            {
+                strings[i] = strings[i].Substring(0, 1).ToUpper()  + strings[i].Substring(1);
 
+                Console.Write($"{strings[i]} ");
+            }
+            Console.ReadLine();
         }
     }
 }
